@@ -1,37 +1,52 @@
-# Talal Alshrar
+# Hi 👋, I'm Talal Al-Sharari | Business Systems & Automation Developer
 
-Game-development and real-time systems portfolio focused on open-world prototypes, native C++ engine architecture, Unreal Engine tooling, and web-to-mobile game experiments.
+![Business Systems](https://img.shields.io/badge/Business%20Systems-Automation%20Developer-0A66C2?style=for-the-badge)
+![Workflow Automation](https://img.shields.io/badge/Workflow-Automation-2EA44F?style=for-the-badge)
+![SLA Compliance](https://img.shields.io/badge/SLA-Compliance%20Driven-FFB000?style=for-the-badge)
+![Developer Advocate](https://img.shields.io/badge/Developer-Advocate-6F42C1?style=for-the-badge)
 
-## Featured Projects
+I build practical business systems that turn operational bottlenecks into automated, script-driven solutions. My work focuses on tools used daily by large teams of 40-60 employees, reducing administrative overhead, improving execution consistency, and enforcing SLA compliance across high-volume workflows.
 
-### Talal Open World Engine
+## About Me
 
-Independent C++23 open-world engine foundation with DX12 renderer scaffolding, memory systems, job scheduling, CMake/vcpkg build automation, and runtime configuration.
+- Business systems builder focused on automation, reporting, and workflow reliability.
+- Developer of internal tools that help teams move faster with fewer manual steps.
+- Strong believer in measurable operational impact, clean handoffs, and maintainable scripts.
+- Comfortable bridging business requirements, data workflows, and production-ready automation.
 
-Repository: `talal-open-world-engine`
+## Tech Stack
 
-### Project Leonida UE 5.8
+### Languages & Scripting
 
-Unreal Engine 5.8 open-world prototype with custom editor plugin work, Python automation, PCG/Water/Landmass workflows, phase validation tooling, and world-building content.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
-Repository: `project-leonida-ue58`
+### Data & Tools
 
-### Open City Six Prototype
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Google Sheets BI](https://img.shields.io/badge/Google%20Sheets%20BI-34A853?style=for-the-badge&logo=googlesheets&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
 
-Three.js/Vite city prototype packaged with Capacitor for Android. Includes browser development workflow, Android wrapper, and Windows build helpers.
+## Current Focus
 
-Repository: `open-city-six-prototype`
+- Local Multi-Agent AI Pipelines using CrewAI and Ollama.
+- Workflow automation for business operations, SLA tracking, and team productivity.
+- Data-driven reporting systems that turn daily operational activity into actionable insights.
 
-## Core Skills Shown Here
+## What I Build
 
-- C++ game engine foundations
-- DirectX 12 renderer architecture
-- Unreal Engine C++ and editor automation
-- Python tooling for game-production workflows
-- WebGL/Three.js prototyping
-- Android packaging through Capacitor
-- Windows build and developer-environment automation
+- Automated trackers and dashboards for operational teams.
+- Google Workspace automation with Apps Script and Sheets-based BI workflows.
+- Python utilities for data cleanup, workflow orchestration, and repetitive task elimination.
+- SQL-backed reporting logic for monitoring performance, workload, and compliance.
 
 ## Contact
 
-Email: alshraritalal@gmail.com
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Talal%20Al--Sharari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talal-alsharari)
+
+---
+
+> Building automation that removes friction, improves visibility, and helps teams deliver on time.
