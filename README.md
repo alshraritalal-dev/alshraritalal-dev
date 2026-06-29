@@ -45,7 +45,7 @@ I build practical business systems that turn operational bottlenecks into automa
 
 ## Contact
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Talal%20Al--Sharari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talal-alsharari)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Talal%20Al--Sharari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talal-alsharari-3a4092278)
 
 ---
 
