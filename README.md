@@ -1,23 +1,23 @@
-# Hi, I'm Talal Al-Sharari
-
-## Business Systems & Automation Developer
+# Hi 👋, I'm Talal Al-Sharari | Business Systems & Automation Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Talal%20Al--Sharari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talal-alsharari-3a4092278)
 [![GitHub](https://img.shields.io/badge/GitHub-alshraritalal--dev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alshraritalal-dev)
-[![Role](https://img.shields.io/badge/Role-Business%20Systems%20Developer-0D9488?style=for-the-badge)](#)
-[![Automation](https://img.shields.io/badge/Focus-Workflow%20Automation-E8A31A?style=for-the-badge)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Public%20Automation%20Projects-0D9488?style=for-the-badge)](#featured-portfolio)
+[![Focus](https://img.shields.io/badge/Focus-Workflow%20Automation%20%7C%20AI%20Pipelines-E8A31A?style=for-the-badge)](#current-focus)
 
-I build practical business systems that turn operational bottlenecks into automated, script-driven solutions. My work focuses on tools used daily by large operational teams, reducing administrative overhead, improving execution consistency, and supporting SLA-driven workflows.
+I translate operational bottlenecks into automated, script-driven business systems. My work focuses on tools used daily by large frontline teams of 40-60 employees to reduce administrative overhead, improve execution visibility, and support SLA compliance.
 
-I combine frontline operations experience with hands-on software development to design systems that are useful, maintainable, and directly tied to measurable business impact.
+I combine contact-center operations experience with practical software development, building Google Apps Script platforms, BI-style dashboards, workflow engines, and local AI automation experiments that solve real operational problems.
 
-## Core Strengths
+## Impact Snapshot
 
-- Workflow automation for high-volume operational teams
-- Google Apps Script, Python, JavaScript, SQL, and dashboard-driven reporting
-- SLA monitoring, escalation tracking, workforce visibility, and process governance
-- Internal tooling that reduces manual work and improves team accountability
-- Local AI automation R&D using CrewAI, Ollama, and multi-agent pipelines
+| Area | What I Build | Business Value |
+|---|---|---|
+| Workflow Automation | Script-driven operational platforms | Fewer manual steps and faster daily execution |
+| SLA Governance | Stale-ticket detection and escalation visibility | Stronger accountability and fewer missed commitments |
+| Workforce Visibility | Attendance, delay, downtime, and leave dashboards | Clearer decisions for supervisors and operations teams |
+| Knowledge Operations | L2 escalation hubs and resolution repositories | Less repeated effort and faster support handling |
+| Local AI R&D | CrewAI/Ollama multi-agent pipelines | Private experimentation without cloud dependency |
 
 ## Tech Stack
 
@@ -30,39 +30,41 @@ I combine frontline operations experience with hands-on software development to 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-### Data, BI & Operations
+### Data & Tools
 
-![Oracle SQL](https://img.shields.io/badge/Oracle%20SQL-F80000?style=flat-square&logo=oracle&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
 ![Google Sheets BI](https://img.shields.io/badge/Google%20Sheets%20BI-34A853?style=flat-square&logo=googlesheets&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![SLA](https://img.shields.io/badge/SLA%20Governance-0D9488?style=flat-square)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-Local%20Agents-111827?style=flat-square)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-000000?style=flat-square)
 
-## Selected Automation Work
+## Featured Portfolio
 
-| Project Area | Business Impact |
-|---|---|
-| Ticket Distribution Automation | Shift-aware workload routing to reduce manual allocation and improve queue balance |
-| L2 Escalation Knowledge Hub | Centralized resolution access to reduce knowledge silos and repeat-contact friction |
-| SLA Breach Governance | Automated stale-ticket detection and supervisor alerting for accountability |
-| Workforce Management Platform | Attendance, downtime, shift delay, and leave request visibility in one operational view |
-| Operational Continuity Dashboard | Rapid fallback dashboarding for live operations during platform disruption |
+| Project | Focus | Stack |
+|---|---|---|
+| [Attendance Command Center](https://github.com/alshraritalal-dev/attendance-command-center-gas-demo) | Sanitized Google Apps Script attendance analytics and reporting dashboard | Apps Script, HTMLService, JavaScript, Google Sheets |
+| [Jira Ticket Workflow Portal](https://github.com/alshraritalal-dev/jira-tkt) | Role-based ticket workflow UI for agents and leaders | Google Apps Script, HTML, JavaScript |
+| [GameBuilderAI](https://github.com/alshraritalal-dev/GameBuilderAI) | Local multi-agent AI pipeline for game-development task orchestration | Python, Ollama, agent workflows |
+| [Talal Open World Engine](https://github.com/alshraritalal-dev/talal-open-world-engine) | C++23 open-world engine foundation and DX12 renderer scaffolding | C++23, CMake, DX12 |
+| [Project Leonida UE5.8](https://github.com/alshraritalal-dev/project-leonida-ue58) | Unreal Engine open-world prototype with editor automation and world-building tools | Unreal Engine, C++, Python |
+| [Open City Six Prototype](https://github.com/alshraritalal-dev/open-city-six-prototype) | Three.js/Vite open-city prototype packaged for Android with Capacitor | JavaScript, Three.js, Vite, Capacitor |
 
 ## Current Focus
 
-- Building local multi-agent AI pipelines with CrewAI and Ollama
-- Automating operational workflows with Python and Google Apps Script
-- Designing dashboards that turn daily operational activity into actionable insight
-- Improving public portfolio projects with clean documentation and secure demo configuration
+- Local Multi-Agent AI Pipelines using CrewAI and Ollama
+- Workflow automation for operations support, ticket routing, and SLA governance
+- Google Apps Script systems backed by Google Sheets as lightweight operational databases
+- Portfolio-grade public demos that keep private data, company identifiers, and runtime secrets out of source control
 
-## Portfolio Direction
+## Professional Positioning
 
-This GitHub profile is focused on business systems, workflow automation, operational tooling, and practical AI-assisted automation. The goal is to show real engineering value: fewer manual steps, clearer visibility, faster execution, and stronger SLA compliance.
+I build internal tools that make operations teams faster, more accountable, and easier to manage. My strongest work sits at the intersection of business process design, automation scripting, dashboarding, and practical systems thinking.
 
-## Connect
+## Contact
 
-- LinkedIn: [linkedin.com/in/talal-alsharari-3a4092278](https://www.linkedin.com/in/talal-alsharari-3a4092278)
-- GitHub: [github.com/alshraritalal-dev](https://github.com/alshraritalal-dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-talal--alsharari--3a4092278-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talal-alsharari-3a4092278)
+[![Email](https://img.shields.io/badge/Email-alshraritalal%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alshraritalal@gmail.com)
 
 ---
 
