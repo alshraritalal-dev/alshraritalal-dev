@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/graphics_settings.schema.json",
+  "title": "Demo Workstation Graphics Settings",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "machine",
+    "backend",
+    "adapter",
+    "display",
+    "quality",
+    "budgets",
+    "hdr_output_path",
+    "frame_limiter_options"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "machine": {
+      "const": "DEMO_WORKSTATION"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "backend": {
+      "enum": [
+        "dx12"
+      ]
+    },
+    "cpu": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "threads": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "baseline": {
+          "enum": [
+            "AVX2"
+          ]
+        }
+      }
+    },
+    "adapter": {
+      "type": "object",
+      "required": [
+        "name",
+        "dedicated_vram_mb",
+        "feature_level",
+        "preset_match"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "vendor_id": {
+          "type": "integer"
+        },
+        "device_id": {
+          "type": "integer"
+        },
+        "dedicated_vram_mb": {
+          "type": "integer",
+          "minimum": 1024
+        },
+        "feature_level": {
+          "enum": [
+            "11_0",
+            "11_1",
+            "12_0",
+            "12_1",
+            "12_2",
+            "unknown"
+          ]
+        },
+        "preset_match": {
+          "type": "boolean"
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "required": [
+        "mode",
+        "width",
+        "height",
+        "refresh_hz",
+        "hdr_detected",
+        "hdr_enabled",
+        "vsync",
+        "frame_limit"
+      ],
+      "properties": {
+        "device": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "windowed",
+            "borderless",
+            "exclusive"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 640,
+          "maximum": 7680
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 480,
+          "maximum": 4320
+        },
+        "refresh_hz": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "hdr_detected": {
+          "type": "boolean"
+        },
+        "hdr_enabled": {
+          "type": "boolean"
+        },
+        "color_space": {
+          "type": "string"
+        },
+        "vsync": {
+          "enum": [
+            "on",
+            "off"
+          ]
+        },
+        "frame_limit": {
+          "oneOf": [
+            {
+              "enum": [
+                "unlimited"
+              ]
+            },
+            {
+              "enum": [
+                "30",
+                "60",
+                "120",
+                "144",
+                "165",
+                "240"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "render_scale_percent",
+        "texture_pool_mb",
+        "anisotropy",
+        "shadow_quality",
+        "shadow_distance_percent",
+        "shadow_cascades",
+        "ambient_occlusion_quality",
+        "global_illumination_quality",
+        "reflection_quality",
+        "volumetric_fog_quality",
+        "foliage_density_percent",
+        "view_distance_percent",
+        "geometry_detail_percent",
+        "terrain_quality_percent",
+        "water_quality_percent",
+        "traffic_density_percent",
+        "crowd_density_percent",
+        "particle_quality_percent",
+        "texture_streaming_aggressiveness",
+        "ray_tracing_mode"
+      ],
+      "properties": {
+        "render_scale_percent": {
+          "type": "integer",
+          "minimum": 50,
+          "maximum": 150
+        },
+        "texture_pool_mb": {
+          "type": "integer",
+          "minimum": 2048,
+          "maximum": 10240
+        },
+        "anisotropy": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16
+        },
+        "shadow_quality": {
+          "$ref": "#/$defs/quality4"
+        },
+        "shadow_distance_percent": {
+          "type": "integer",
+          "minimum": 25,
+          "maximum": 100
+        },
+        "shadow_cascades": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "ambient_occlusion_quality": {
+          "$ref": "#/$defs/quality4"
+        },
+        "global_illumination_quality": {
+          "$ref": "#/$defs/quality4"
+        },
+        "reflection_quality": {
+          "$ref": "#/$defs/quality4"
+        },
+        "volumetric_fog_quality": {
+          "$ref": "#/$defs/quality4"
+        },
+        "foliage_density_percent": {
+          "$ref": "#/$defs/percent"
+        },
+        "view_distance_percent": {
+          "type": "integer",
+          "minimum": 25,
+          "maximum": 100
+        },
+        "geometry_detail_percent": {
+          "type": "integer",
+          "minimum": 25,
+          "maximum": 100
+        },
+        "terrain_quality_percent": {
+          "type": "integer",
+          "minimum": 25,
+          "maximum": 100
+        },
+        "water_quality_percent": {
+          "type": "integer",
+          "minimum": 25,
+          "maximum": 100
+        },
+        "traffic_density_percent": {
+          "$ref": "#/$defs/percent"
+        },
+        "crowd_density_percent": {
+          "$ref": "#/$defs/percent"
+        },
+        "particle_quality_percent": {
+          "$ref": "#/$defs/percent"
+        },
+        "texture_streaming_aggressiveness": {
+          "$ref": "#/$defs/percent"
+        },
+        "ray_tracing_mode": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "required": [
+        "dedicated_vram_mb",
+        "usable_vram_budget_mb",
+        "estimated_total_mb",
+        "estimated_headroom_mb",
+        "texture_pool_mb",
+        "render_targets_mb",
+        "shadows_mb",
+        "world_mb",
+        "post_mb",
+        "ray_tracing_mb",
+        "transient_gpu_mb"
+      ],
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "hdr_output_path": {
+      "type": "string"
+    },
+    "frame_limiter_options": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": 30
+        },
+        {
+          "const": 60
+        },
+        {
+          "const": 120
+        },
+        {
+          "const": 144
+        },
+        {
+          "const": 165
+        },
+        {
+          "const": 240
+        },
+        {
+          "const": "unlimited"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "quality4": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "percent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

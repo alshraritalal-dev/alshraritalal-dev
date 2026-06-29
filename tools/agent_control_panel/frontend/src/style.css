@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Tajawal:wght@400;500;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  color-scheme: dark;
+
+  /* Ultra-dark, slightly blue-tinted grays for depth */
+  --bg-root:   #060608;
+  --bg-panel:  #0a0a0f;
+  --bg-surface:#12121a;
+  --bg-hover:  #181824;
+
+  /* Elegant borders */
+  --border-dim:   #1a1a24;
+  --border-focus: #2c2c3d;
+
+  /* Typography */
+  --text-main: #ededf3;
+  --text-mute: #8a8a9e;
+  --text-dim:  #4a4a5e;
+
+  /* Brand Accents (Cyber-aesthetic) */
+  --accent-main:  #6366f1;  /* Indigo */
+  --accent-glow:  rgba(99, 102, 241, 0.15);
+  --success:      #10b981;
+  --warning:      #f59e0b;
+  --danger:       #ef4444;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-ar: 'Tajawal', sans-serif;
+}
+
+html, body, #app { height: 100%; background: var(--bg-root); font-family: var(--font-sans); color: var(--text-main); }
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-thumb { background: var(--border-focus); border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }

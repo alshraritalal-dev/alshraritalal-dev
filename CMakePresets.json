@@ -1,0 +1,77 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 28,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "demo-workstation-base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "TALAL_TARGET_MACHINE": "DEMO_WORKSTATION",
+        "TALAL_CPU_BASELINE": "AVX2",
+        "TALAL_LOCAL_COMPILE_JOBS": "16",
+        "TALAL_LOCAL_SHADER_JOBS": "12",
+        "TALAL_LOCAL_ASSET_JOBS": "8",
+        "TALAL_REQUIRE_DEPENDENCIES": "OFF"
+      }
+    },
+    {
+      "name": "demo-workstation-debug",
+      "inherits": "demo-workstation-base",
+      "displayName": "DEMO_WORKSTATION Debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "demo-workstation-profile",
+      "inherits": "demo-workstation-base",
+      "displayName": "DEMO_WORKSTATION Profile",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "TALAL_PROFILE_BUILD": "ON"
+      }
+    },
+    {
+      "name": "demo-workstation-release",
+      "inherits": "demo-workstation-base",
+      "displayName": "DEMO_WORKSTATION Release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "demo-workstation-debug",
+      "configurePreset": "demo-workstation-debug",
+      "jobs": 16
+    },
+    {
+      "name": "demo-workstation-profile",
+      "configurePreset": "demo-workstation-profile",
+      "jobs": 16
+    },
+    {
+      "name": "demo-workstation-release",
+      "configurePreset": "demo-workstation-release",
+      "jobs": 16
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "demo-workstation-debug",
+      "configurePreset": "demo-workstation-debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
