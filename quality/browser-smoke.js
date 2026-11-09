@@ -28,7 +28,7 @@ const server = http.createServer((req,res) => {
       for (const name of pages) {
         const item = page.locator('[data-page="' + name + '"]').first();
         if (await item.count()) {
-          await item.click({force:true});
+          await item.evaluate(el => el.click());
           await page.waitForTimeout(80);
         }
       }

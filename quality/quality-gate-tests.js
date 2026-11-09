@@ -181,8 +181,8 @@ const sameFamilyProgress={attempts:[],universal:{skills:{fractions:{logs:[
   {id:'transfer-new',date:'2026-11-03',time:3,phase:'transfer',family:'fractions/new-family',correct:true,assessmentEligible:true,familyClassified:true,serverVerified:true,reviewStatus:'independently_approved',editorialStatus:'approved'}
 ]}}}};
 const secureRows=Bsecure.evidence(profileData,sameFamilyProgress);
-assert.equal(secureRows.find(x=>x.id==='transfer-same').phase,'transfer','same exposed family is not independent');
-assert.equal(secureRows.find(x=>x.id==='transfer-new').phase,'independent','unseen approved family can be independent when server policy is enabled');
+assert.equal(secureRows.find(x=>x.id.startsWith('transfer-same:')).phase,'transfer','same exposed family is not independent');
+assert.equal(secureRows.find(x=>x.id.startsWith('transfer-new:')).phase,'independent','unseen approved family can be independent when server policy is enabled');
 assert.ok(html.includes("const STORE='rahla95-local-v1'"), 'local storage schema was not reset');
 assert.ok(html.includes('assessmentIntegrityVersion') && html.includes('3.1.5'), 'quality gate version marker exists');
 assert.ok(!html.includes("if(t.phase==='mastery'){"), 'old mastery phase is not a live UI phase');
