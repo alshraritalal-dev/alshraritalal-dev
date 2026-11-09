@@ -1,0 +1,36 @@
+name: Rihla 95 V3.1.5 Quality Gate
+on:
+  push:
+    branches:
+      - rahla95-v3-1-5-quality-gate
+  pull_request:
+    branches:
+      - rahla95-v3-1-integrity
+    paths:
+      - 'index.html'
+      - 'quality/**'
+      - '.github/workflows/quality-gate.yml'
+jobs:
+  static-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Static audit and learning-integrity tests
+        run: node quality/quality-gate-tests.js
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Playwright
+        run: npm install --no-save playwright
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Desktop and mobile smoke tests
+        run: node quality/browser-smoke.js
