@@ -186,6 +186,7 @@ assert.equal(secureRows.find(x=>x.id.startsWith('transfer-new:')).phase,'indepen
 assert.ok(html.includes("const STORE='rahla95-local-v1'"), 'local storage schema was not reset');
 assert.ok(html.includes('assessmentIntegrityVersion') && html.includes('3.1.5'), 'quality gate version marker exists');
 assert.ok(!html.includes("if(t.phase==='mastery'){"), 'old mastery phase is not a live UI phase');
+assert.ok(!html.includes('اختبار إتقان') && !html.includes('اختبار الإتقان'), 'no unsupported mastery-test label is shown');
 console.log(JSON.stringify({
   result:'PASS',
   inventory:allItems.length,
